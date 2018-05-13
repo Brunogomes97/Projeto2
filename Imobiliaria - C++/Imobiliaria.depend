@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1526242255 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\main.cpp
+	<iostream>
+	"Endereco.h"
+	<string>
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+
+1526137106 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\src\endereco.cpp
+	"Endereco.h"
+
+1526137106 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\endereco.h
+	<string>
+
+1526148796 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\src\imovel.cpp
+	"Imovel.h"
+
+1526150843 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\imovel.h
+	"Endereco.h"
+
+1526240327 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\src\casa.cpp
+	"Casa.h"
+	<string>
+	<stdio.h>
+
+1526240327 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\casa.h
+	"Imovel.h"
+
+1526239064 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\src\apartamento.cpp
+	"Apartamento.h"
+
+1526241019 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\apartamento.h
+	"Imovel.h"
+
+1526242330 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria\src\terreno.cpp
+	"Terreno.h"
+
+1526242255 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\terreno.h
+	"Imovel.h"
+
