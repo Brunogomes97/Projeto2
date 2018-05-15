@@ -2,15 +2,14 @@
 
 using namespace std;
 
-Apartamento::Apartamento(){}
+Apartamento::Apartamento(){
+    tipoImovel=2;
 
-Endereco Apartamento::getEndereco(Endereco ender){
-    d=ender;
-    return d;
 }
 
 int Apartamento::getTipoImovel(){
-    return 2;
+
+    return tipoImovel;
 
 }
  void Apartamento::setPosicao(std::string posicao){
@@ -19,10 +18,7 @@ int Apartamento::getTipoImovel(){
 void Apartamento::setQuartos(int numQuartos){
     this->numQuartos=numQuartos;
 }
-void Apartamento::setValorCond(double valorCondominio){
-    this->valorCondominio=valorCondominio;
 
-}
 void Apartamento::setGaragem(int vagasGaragem){
     this->vagasGaragem=vagasGaragem;
 }
@@ -40,9 +36,7 @@ int Apartamento::getQuartos(){
 int Apartamento::getGaragem(){
     return vagasGaragem;
 }
-double Apartamento::getValorCond(){
-    return valorCondominio;
-}
+
 double Apartamento::getAreaAP(){
     return areaAP;
 

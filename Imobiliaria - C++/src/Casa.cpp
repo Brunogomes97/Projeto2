@@ -4,6 +4,12 @@
 using namespace std;
 
 
+Casa::Casa()
+{
+    tipoImovel=1;
+}
+
+
 void Casa::setPav(int numPavimentos){
     this->numPavimentos=numPavimentos;
 }
@@ -37,17 +43,10 @@ double Casa::getAreaC(){
 
 }
 
-Casa::Casa()
-{
-    //ctor
-}
 double Casa::getValor(){
     return valor;
 }
-Endereco Casa::getEndereco(Endereco ender){
-    d=ender;
-    return d;
-}
+
 
 string Casa::getdescricao(){
     return "teste";
@@ -55,7 +54,8 @@ string Casa::getdescricao(){
 
 }
 int Casa::getTipoImovel(){
-    return 1;
+
+    return tipoImovel;
 
 }
 Casa::~Casa()

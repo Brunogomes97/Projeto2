@@ -9,7 +9,6 @@ class Terreno: public Imovel
         void setAreaT(double);
         double getAreaT();
         std::string getdescricao();
-        Endereco getEndereco(Endereco d);
         int getTipoImovel();
     private:
         double areaT;

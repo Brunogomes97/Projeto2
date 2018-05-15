@@ -2,11 +2,12 @@
 using namespace std;
 Terreno::Terreno()
 {
-    //ctor
+     tipoImovel=3;
 }
 
 int Terreno::getTipoImovel(){
-    return 3;
+
+    return tipoImovel;
 
 
 }
@@ -23,10 +24,7 @@ double Terreno::getAreaT(){
     return areaT;
 
 }
-Endereco Terreno::getEndereco(Endereco ender){
-    d=ender;
-    return d;
-}
+
 Terreno::~Terreno()
 {
     //dtor

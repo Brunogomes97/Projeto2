@@ -8,7 +8,7 @@ class Imovel
         Imovel();
         virtual double getValor();
         virtual int getTipoImovel()=0;
-        virtual Endereco getEndereco(Endereco d)=0;
+        virtual Endereco getEndereco(Endereco d);
         virtual ~Imovel();
         virtual std::string getdescricao()=0;
         Endereco d;

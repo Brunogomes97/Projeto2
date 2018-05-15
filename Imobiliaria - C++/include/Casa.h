@@ -10,8 +10,6 @@ class Casa : public Imovel
         double getValor();
         int getTipoImovel();
         std::string getdescricao();
-        Endereco getEndereco(Endereco d);
-
         void setPav(int);
         void setQuartos(int);
         void setAreaT(double);
@@ -20,6 +18,7 @@ class Casa : public Imovel
         int getQuartos();
         double getAreaT();
         double getAreaC();
+
     private:
         int numPavimentos;
         int numQuartos;
