@@ -1,19 +1,20 @@
 #ifndef SISTEMAIMOBILIARIA_H
 #define SISTEMAIMOBILIARIA_H
 #include "Imovel.h"
-
-class SistemaImobiliaria:public Imovel
+#include "Casa.h"
+class SistemaImobiliaria
 {
     public:
         SistemaImobiliaria();
         virtual ~SistemaImobiliaria();
-        void cadastraImovel();
+        void cadastraImovel(Imovel *a,int);
         void getImoveis();
         void getDescricaoImoveis();
         void getImoveisPorTipo(int);
         void getImoveisParaAlugarPorBairro(std::string);
         void getImoveisParaVenderPorBairro(std::string);
         void getImoveisPorCidade(std::string);
+        Imovel *imoveis[100];
 
     protected:
 

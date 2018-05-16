@@ -5,26 +5,34 @@
 #include "Casa.h"
 #include "Apartamento.h"
 #include "Terreno.h"
-
+#include "SistemaImobiliaria.h"
 using namespace std;
 
 int main()
 {
 
     //TESTES DAS CLASSES
-    Imovel *imo5[100];
+    //SistemaImobiliaria *imo = new Casa;
+    int i=0;
+    Casa *imo;
+    Apartamento *ap;
+    Terreno *t;
+    SistemaImobiliaria sys;
 
-    imo5[0] = new Casa();
+    sys.cadastraImovel(imo,i);
+/*
+    cout<<imo->getTipoImovel()<<endl;
+   // imo[0]->setPav(5);
+    imo->getEndereco(Endereco("Joao Pessoa","Centro","98020020","AV Silva",2323));
+    cout<<imo->d.getBairro()<<endl;
+    cout<<imo->d.getCidade()<<endl;
+    cout<<imo->d.getCep()<<endl;
+    cout<<imo->d.getNumero()<<endl;
+    cout<<imo->d.getLogradouro()<<endl;
 
-    imo5[0]->getEndereco(Endereco("Joao Pessoa","Centro","98020020","AV Silva",2323));
-    cout<<imo5[0]->d.getBairro()<<endl;
-    cout<<imo5[0]->d.getCidade()<<endl;
-    cout<<imo5[0]->d.getCep()<<endl;
-    cout<<imo5[0]->d.getNumero()<<endl;
-    cout<<imo5[0]->d.getLogradouro()<<endl;
+    delete imo;
 
-    delete imo5[0];
- /*
+
    Casa *imo = new Casa();
    Apartamento *imo2 = new Apartamento();
    Terreno *imo3 = new Terreno();
