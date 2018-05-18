@@ -2,11 +2,18 @@
 
 using namespace std;
 
+Apartamento::Apartamento(string posicao,int numQuartos,int vagasGaragem,double areaAP){
+    this->posicao=posicao;
+    this->numQuartos=numQuartos;
+    this->vagasGaragem=vagasGaragem;
+    this->areaAP=areaAP;
+    tipoImovel=2;
+
+}
 Apartamento::Apartamento(){
     tipoImovel=2;
 
 }
-
 int Apartamento::getTipoImovel(){
 
     return tipoImovel;
@@ -42,8 +49,38 @@ double Apartamento::getAreaAP(){
 
 }
 string Apartamento::getdescricao(){
-    return "teste";
+       stringstream ss;
+    ss<<"********************************************\n"
+      <<"AP                                          \n"
+      <<"*******Informacoes Especificas**************\n"
+      <<"Posicao: "<<posicao <<                     "\n"
+      <<"N de Quartos: "   <<numQuartos<<           "\n"
+      <<"Vagas na Garagem: "<<vagasGaragem<<        "\n"
+      <<"Area do AP: "<<areaAP<<"m2"<<              "\n"
+      <<"********************************************\n";
+
+    return ss.str();
 }
+void Apartamento::cadEspecifico(){
+    int x;
+    do{
+        cout<<"******************************************\n";
+        cout<<"Insira as informacoes especificas do AP:\n";
+        cout<<"******************************************\n";
+        cout<<"1-Insira um referencia(Posicao):\n";
+        cin>>posicao;
+        cout<<"2-Insira o numero de quartos da casa:\n";
+        cin>>numQuartos;
+        cout<<"3-Insira o numero de vagas na garagem\n";
+        cin>>vagasGaragem;
+        cout<<"4-Area do apartamento em metros quadrados:\n";
+        cin>>areaAP;
+        cout<<"Deseja salvar as alteracoes de AP?(1-SIM ou Qualquer numero para Repetir o Preenchimento)\n";
+        cin>>x;
+        system("cls");
+    }while(x!=1);
+
+    }
 
 Apartamento::~Apartamento()
 {

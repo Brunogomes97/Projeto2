@@ -5,11 +5,12 @@
 class Casa : public Imovel
 {
     public:
+        Casa(int,int,double,double);
         Casa();
         virtual ~Casa();
-        double getValor();
         int getTipoImovel();
         std::string getdescricao();
+        void cadEspecifico();
         void setPav(int);
         void setQuartos(int);
         void setAreaT(double);
@@ -24,6 +25,8 @@ class Casa : public Imovel
         int numQuartos;
         double areaTerreno;
         double areaConstruida;
+
+
 
 
 };

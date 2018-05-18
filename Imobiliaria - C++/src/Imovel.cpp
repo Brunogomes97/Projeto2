@@ -13,6 +13,22 @@ Endereco Imovel::getEndereco(Endereco ender){
     return d;
 }
 
+
+ void Imovel::setOferta(int tipoOferta){
+    this->tipoOferta=tipoOferta;
+ }
+
+
+void Imovel::resetTipoImovel()
+{
+    tipoImovel=0;
+
+}
+
+void Imovel::setValor(double valor){
+    this->valor=valor;
+
+ }
 Imovel::~Imovel()
 {
     //dtor

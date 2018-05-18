@@ -5,6 +5,7 @@
 class Apartamento : public Imovel
 {
     public:
+        Apartamento(std::string,int,int,double);
         Apartamento();
         virtual ~Apartamento();
         int getTipoImovel();
@@ -12,6 +13,7 @@ class Apartamento : public Imovel
         void setQuartos(int);
         void setGaragem(int);
         void setAreaAP(double);
+        void cadEspecifico();
         std::string getPosicao();
         int getQuartos();
         int getGaragem();

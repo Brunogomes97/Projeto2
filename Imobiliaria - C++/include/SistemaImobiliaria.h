@@ -2,6 +2,8 @@
 #define SISTEMAIMOBILIARIA_H
 #include "Imovel.h"
 #include "Casa.h"
+#include <iostream>
+#define MAX 100
 class SistemaImobiliaria
 {
     public:
@@ -14,7 +16,7 @@ class SistemaImobiliaria
         void getImoveisParaAlugarPorBairro(std::string);
         void getImoveisParaVenderPorBairro(std::string);
         void getImoveisPorCidade(std::string);
-        Imovel *imoveis[100];
+        Imovel *imoveis[MAX];
 
     protected:
 

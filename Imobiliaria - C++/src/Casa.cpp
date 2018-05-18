@@ -1,14 +1,42 @@
 #include "Casa.h"
-#include <string>
-#include <stdio.h>
+
 using namespace std;
 
 
-Casa::Casa()
+Casa::Casa(int numPavimentos,int numQuartos,double areaConstruida,double areaTerreno)
 {
+    this->numPavimentos=numPavimentos;
+    this->areaConstruida=areaConstruida;
+    this->numQuartos=numQuartos;
+    this->areaTerreno=areaTerreno;
     tipoImovel=1;
 }
+Casa::Casa()
+{
+  tipoImovel=1;
 
+}
+
+void Casa::cadEspecifico(){
+    int x;
+    do{
+        cout<<"******************************************\n";
+        cout<<"Insira as informacoes especificas da casa:\n";
+        cout<<"******************************************\n";
+        cout<<"1-Insira o numero de pavimentos:\n";
+        cin>>numPavimentos;
+        cout<<"2-Insira o numero de quartos da casa:\n";
+        cin>>numQuartos;
+        cout<<"3-Area do terreno(em metros quadrados):\n";
+        cin>>areaTerreno;
+        cout<<"4-Area do terreno construida(em metros quadrados):\n";
+        cin>>areaConstruida;
+        cout<<"Deseja salvar as alteracoes de CASA?(1-SIM ou Qualquer numero para Repetir o Preenchimento)\n";
+        cin>>x;
+
+    system("cls");
+    }while(x!=1);
+}
 
 void Casa::setPav(int numPavimentos){
     this->numPavimentos=numPavimentos;
@@ -43,16 +71,24 @@ double Casa::getAreaC(){
 
 }
 
-double Casa::getValor(){
-    return valor;
-}
-
 
 string Casa::getdescricao(){
-    return "teste";
 
+    stringstream ss;
+    ss<<"********************************************\n"
+      <<"CASA                                        \n"
+      <<"*******Informacoes Especificas**************\n"
+      <<"N de Pavimentos: "<<numPavimentos <<       "\n"
+      <<"N de Quartos: "   <<numQuartos<<           "\n"
+      <<"Area Construida: "<<areaConstruida<<"m2"<< "\n"
+      <<"Area do Terreno: "<<areaTerreno<<"m2"<<    "\n"
+      <<"********************************************\n";
+
+    return ss.str();
 
 }
+
+
 int Casa::getTipoImovel(){
 
     return tipoImovel;
