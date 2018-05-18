@@ -5,6 +5,7 @@
 #include <string>
 #include <stdlib.h>
 #include <iostream>
+#include <stdio.h>
 class Imovel
 {
     public:
@@ -17,13 +18,14 @@ class Imovel
         virtual std::string getdescricao()=0;
         virtual void setValor(double);
         virtual void setOferta(int);
+        virtual int  getOferta();
+        virtual void cadOferta();
         void resetTipoImovel();
         Endereco d;
     protected:
-        int tipoImovel; // casa-1,ap-2,terreno-3;
+        int tipoImovel; // casa-1,ap-2,terreno-3,studio-4,flat-5;
         int tipoOferta; //venda - 1, alugar - 2,indisponivel - 0
         double valor;
-
 
 };
 

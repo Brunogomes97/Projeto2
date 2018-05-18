@@ -38,15 +38,19 @@
 		<Unit filename="include/Apartamento.h" />
 		<Unit filename="include/Casa.h" />
 		<Unit filename="include/Endereco.h" />
+		<Unit filename="include/Flat.h" />
 		<Unit filename="include/Imovel.h" />
 		<Unit filename="include/SistemaImobiliaria.h" />
+		<Unit filename="include/Studio.h" />
 		<Unit filename="include/Terreno.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Apartamento.cpp" />
 		<Unit filename="src/Casa.cpp" />
 		<Unit filename="src/Endereco.cpp" />
+		<Unit filename="src/Flat.cpp" />
 		<Unit filename="src/Imovel.cpp" />
 		<Unit filename="src/SistemaImobiliaria.cpp" />
+		<Unit filename="src/Studio.cpp" />
 		<Unit filename="src/Terreno.cpp" />
 		<Extensions>
 			<code_completion />

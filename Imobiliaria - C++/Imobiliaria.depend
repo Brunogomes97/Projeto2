@@ -39,7 +39,7 @@
 1526242255 c:\users\cliente\desktop\backup\programação em c++\imobiliaria\include\terreno.h
 	"Imovel.h"
 
-1526602418 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\main.cpp
+1526687391 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\main.cpp
 	<iostream>
 	"Endereco.h"
 	<string>
@@ -50,18 +50,22 @@
 	"SistemaImobiliaria.h"
 	<sstream>
 	<ctype.h>
+	"Studio.h"
+	"Flat.h"
+	<stdio.h>
 
 1526137106 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\endereco.h
 	<string>
 
-1526602982 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\imovel.h
+1526687391 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\imovel.h
 	"Endereco.h"
 	<sstream>
 	<string>
 	<stdlib.h>
 	<iostream>
+	<stdio.h>
 
-1526598614 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\casa.h
+1526661688 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\casa.h
 	"Imovel.h"
 
 1526593924 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\apartamento.h
@@ -70,27 +74,30 @@
 1526137106 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\endereco.cpp
 	"Endereco.h"
 
-1526602279 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\apartamento.cpp
+1526686511 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\apartamento.cpp
 	"Apartamento.h"
 
-1526599745 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\casa.cpp
+1526683831 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\casa.cpp
 	"Casa.h"
 
-1526602947 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\imovel.cpp
+1526687391 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\imovel.cpp
 	"Imovel.h"
 
-1526593878 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\terreno.cpp
+1526666706 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\terreno.cpp
 	"Terreno.h"
 
 1526593878 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\terreno.h
 	"Imovel.h"
 
-1526602066 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\sistemaimobiliaria.cpp
+1526687391 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\sistemaimobiliaria.cpp
 	"SistemaImobiliaria.h"
+	<string.h>
 
-1526601610 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\sistemaimobiliaria.h
+1526685440 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\sistemaimobiliaria.h
 	"Imovel.h"
 	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
 	<iostream>
 
 1526405995 source:k:\imobiliaria - c++\src\apartamento.cpp
@@ -141,4 +148,16 @@
 	"Apartamento.h"
 	"Terreno.h"
 	"SistemaImobiliaria.h"
+
+1526684114 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\studio.h
+	"Imovel.h"
+
+1526683973 c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\include\flat.h
+	"Imovel.h"
+
+1526684114 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\flat.cpp
+	"Flat.h"
+
+1526683894 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\studio.cpp
+	"Studio.h"
 

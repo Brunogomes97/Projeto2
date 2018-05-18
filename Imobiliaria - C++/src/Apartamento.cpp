@@ -52,7 +52,7 @@ string Apartamento::getdescricao(){
        stringstream ss;
     ss<<"********************************************\n"
       <<"AP                                          \n"
-      <<"*******Informacoes Especificas**************\n"
+      <<"**********Informacoes Especificas***********\n"
       <<"Posicao: "<<posicao <<                     "\n"
       <<"N de Quartos: "   <<numQuartos<<           "\n"
       <<"Vagas na Garagem: "<<vagasGaragem<<        "\n"
@@ -68,7 +68,8 @@ void Apartamento::cadEspecifico(){
         cout<<"Insira as informacoes especificas do AP:\n";
         cout<<"******************************************\n";
         cout<<"1-Insira um referencia(Posicao):\n";
-        cin>>posicao;
+        setbuf(stdin,NULL);
+        getline(cin,posicao);
         cout<<"2-Insira o numero de quartos da casa:\n";
         cin>>numQuartos;
         cout<<"3-Insira o numero de vagas na garagem\n";

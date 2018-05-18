@@ -8,68 +8,10 @@
 #include "SistemaImobiliaria.h"
 #include <sstream>
 #include <ctype.h>
-
+#include "Studio.h"
+#include "Flat.h"
+#include <stdio.h>
 using namespace std;
-int maina(){
-
-
-/*
-    cout<<imo->getTipoImovel()<<endl;
-   // imo[0]->setPav(5);
-    imo->getEndereco(Endereco("Joao Pessoa","Centro","98020020","AV Silva",2323));
-    cout<<imo->d.getBairro()<<endl;
-    cout<<imo->d.getCidade()<<endl;
-    cout<<imo->d.getCep()<<endl;
-    cout<<imo->d.getNumero()<<endl;
-    cout<<imo->d.getLogradouro()<<endl;
-
-    delete imo;
-
-
-   Casa *imo = new Casa();
-   Apartamento *imo2 = new Apartamento();
-   Terreno *imo3 = new Terreno();
-
-  // cout<<imo->getdescricao()<<endl;
-    imo3->setAreaT(458);
-    imo->setAreaC(45);
-    imo2->setPosicao("Zona norte");
-
-  cout<<imo2->getPosicao()<<endl;
-  cout<<imo->getAreaC()<<endl;
-  cout<<imo3->getAreaT()<<endl;
-  //imo->d.setCidade("Joao Pessoa");
-  cout<<imo->d.getBairro()<<endl;
-  cout<<imo->d.getCidade()<<endl;
-  cout<<imo->d.getCep()<<endl;
-  cout<<imo->d.getNumero()<<endl;
-  cout<<imo->d.getLogradouro()<<endl;
-
-
-
-
-
-      system("cls");
-    cout<<imo->d.getBairro()<<endl;
-    cout<<imo->d.getCidade()<<endl;
-    cout<<imo->d.getCep()<<endl;
-    cout<<imo->d.getNumero()<<endl;
-    cout<<imo->d.getLogradouro()<<endl;
-    cout<<imo->getPav()<<endl;
-    cout<<imo->getQuartos()<<endl;
-    cout<<imo->getAreaT()<<endl;
-    cout<<imo->getAreaC()<<endl;
-
-    system("pause");
-
-
-   delete imo;
-*/
-    return 1;
-}
-
-
-
 
 int main()
 {
@@ -80,9 +22,9 @@ int main()
    Casa *cas;
    Apartamento *ap;
    Terreno *t;
+   //Studio *st;
+   //Flat *fl;
    SistemaImobiliaria sys;
-
-
 
     do{
         cout<<"*************************************************\n";
@@ -106,7 +48,7 @@ int main()
         case 1:
 
          if(i>100){
-            cout<<"Limite de Imoveis cadastrados!";
+            cout<<"Limite de Imoveis cadastrados!\n";
             break;
 
          }else{
@@ -114,7 +56,10 @@ int main()
             cout<<"*************************************************\n";
             cout<<"O que deseja cadastrar?(CASA,APARTAMENTO,TERRENO)\n";
             cout<<"*************************************************\n";
-            cin>>imov;
+            setbuf(stdin,NULL);
+            getline(cin,imov);
+            sys.strupr(imov);
+            system("cls");
 
             if(imov=="CASA"){
                  cas = new Casa();
@@ -125,12 +70,28 @@ int main()
             }
             else if(imov =="APARTAMENTO"){
                 ap = new Apartamento();
+                system("cls");
                 sys.cadastraImovel(ap,i);
                 i++;
 
             }else if(imov =="TERRENO"){
                 t = new Terreno();
+                system("cls");
                 sys.cadastraImovel(t,i);
+                i++;
+
+            }
+              else if(imov =="STUDIO"){
+              //  st = new Studio();
+                system("cls");
+               // sys.cadastraImovel(st,i);
+                i++;
+
+            }
+              else if(imov =="FLAT"){
+               // fl = new Flat();
+                system("cls");
+               // sys.cadastraImovel(fl,i);
                 i++;
 
             }
@@ -149,33 +110,36 @@ int main()
 
         case 3:
             system("cls");
-            //
-            system("pause");
+            sys.getDescricaoImoveis();
             system("cls");
             break;
 
         case 4:
-            //
+            system("cls");
+            sys.getImoveisVendaPorTipo();
+            system("pause");
             system("cls");
             break;
 
         case 5:
-            //
+            system("cls");
+            sys.getImoveisAlugarPorTipo();
+            system("pause");
             system("cls");
             break;
         case 6:
             system("cls");
-            //
+            sys.getImoveisParaAlugarPorBairro();
 
             break;
         case 7:
             system("cls");
-            //
+            sys.getImoveisParaVenderPorBairro();
 
             break;
         case 8:
             system("cls");
-            //;
+            sys.getImoveisPorCidade();
             break;
         case 9:
             system("cls");

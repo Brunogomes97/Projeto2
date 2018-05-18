@@ -13,7 +13,11 @@ Casa::Casa(int numPavimentos,int numQuartos,double areaConstruida,double areaTer
 }
 Casa::Casa()
 {
-  tipoImovel=1;
+      numPavimentos=0;
+      areaConstruida=0;
+      numQuartos=0;
+      areaTerreno=0;
+      tipoImovel=1;
 
 }
 
@@ -77,7 +81,7 @@ string Casa::getdescricao(){
     stringstream ss;
     ss<<"********************************************\n"
       <<"CASA                                        \n"
-      <<"*******Informacoes Especificas**************\n"
+      <<"**********Informacoes Especificas***********\n"
       <<"N de Pavimentos: "<<numPavimentos <<       "\n"
       <<"N de Quartos: "   <<numQuartos<<           "\n"
       <<"Area Construida: "<<areaConstruida<<"m2"<< "\n"
