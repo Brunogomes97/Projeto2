@@ -56,6 +56,7 @@ string Apartamento::getdescricao(){
       <<"Posicao: "<<posicao <<                     "\n"
       <<"N de Quartos: "   <<numQuartos<<           "\n"
       <<"Vagas na Garagem: "<<vagasGaragem<<        "\n"
+      <<"N de Andares: "<<andar<<                   "\n"
       <<"Area do AP: "<<areaAP<<"m2"<<              "\n"
       <<"********************************************\n";
 
@@ -70,11 +71,13 @@ void Apartamento::cadEspecifico(){
         cout<<"1-Insira um referencia(Posicao):\n";
         setbuf(stdin,NULL);
         getline(cin,posicao);
-        cout<<"2-Insira o numero de quartos da casa:\n";
+        cout<<"2-Insira o numero de quartos do AP:\n";
         cin>>numQuartos;
-        cout<<"3-Insira o numero de vagas na garagem\n";
+        cout<<"3-Insira o numero de andares:\n";
+        cin>>andar;
+        cout<<"4-Insira o numero de vagas na garagem\n";
         cin>>vagasGaragem;
-        cout<<"4-Area do apartamento em metros quadrados:\n";
+        cout<<"5-Area do apartamento em metros quadrados:\n";
         cin>>areaAP;
         cout<<"Deseja salvar as alteracoes de AP?(1-SIM ou Qualquer numero para Repetir o Preenchimento)\n";
         cin>>x;

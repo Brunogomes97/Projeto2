@@ -10,7 +10,6 @@ void SistemaImobiliaria::cadastraImovel(Imovel *a,int i){
     double valor;
 
     imoveis[i]=a;
-    fbool[i]=0;
 
 do{
     cout<<"********************************************\n";
@@ -29,7 +28,7 @@ do{
     cout<<"4-Insira a rua do Imovel:\n";
     setbuf(stdin,NULL);
     getline(cin,rua);
-    cout<<"5-Insira o Numero da Casa:\n";
+    cout<<"5-Insira o Numero da Imovel:\n";
     cin>>numero;
     cout<<"6-Valor do Imovel(em Reais):\n";
     cin>>valor;
@@ -109,7 +108,7 @@ void SistemaImobiliaria::getImoveisVendaPorTipo(){
     for(int i=0;i<flag;i++){
         if(imoveis[i]->getOferta()==1){
              if(fbool[i]==1){
-              descricao(i);
+                descricao(i);
             }
         }
     }
@@ -119,8 +118,8 @@ void SistemaImobiliaria::getImoveisAlugarPorTipo(){
 
     for(int i=0;i<flag;i++){
         if(imoveis[i]->getOferta()==3){
-             if(fbool[i]==1){
-              descricao(i);
+            if(fbool[i]==1){
+                descricao(i);
             }
         }
     }
@@ -145,12 +144,14 @@ void SistemaImobiliaria::getImoveisPorCidade(){
         system("cls");
 
         for(int i=0;i<flag;i++){
+            if(fbool[i]==1){
             y=imoveis[i]->d.getCidade();
             strupr(y);
             if(y==x){
                 descricao(i);
             }
          }
+      }
         cout<<"Digite 1 para sair ou qualquer numero para pesquisar novamente:\n";
         cin>>op;
         system("cls");
@@ -179,12 +180,14 @@ void SistemaImobiliaria::getImoveisPorCidade(){
         system("cls");
 
         for(int i=0;i<flag;i++){
+            if(fbool[i]==1){
             y=imoveis[i]->d.getBairro();
             strupr(y);
             if(y==x){
                 descricao(i);
             }
          }
+    }
         cout<<"Digite 1 para sair ou qualquer numero para pesquisar novamente:\n";
         cin>>op;
         system("cls");
@@ -214,12 +217,14 @@ void SistemaImobiliaria::getImoveisParaVenderPorBairro(){
         system("cls");
 
         for(int i=0;i<flag;i++){
-            y=imoveis[i]->d.getBairro();
-            strupr(y);
-            if(y==x){
-                descricao(i);
+            if(fbool[i]==1){
+                y=imoveis[i]->d.getBairro();
+                strupr(y);
+                if(y==x){
+                    descricao(i);
+                }
             }
-         }
+        }
         cout<<"Digite 1 para sair ou qualquer numero para pesquisar novamente:\n";
         cin>>op;
         system("cls");
@@ -232,22 +237,161 @@ void SistemaImobiliaria::getImoveisParaVenderPorBairro(){
 
 }
 
+void SistemaImobiliaria::deleteImovel(){
+    int x;
+    if(flag>0){
+        cout<<"*********************************\n";
+        cout<<"HABILITE OU DESABILITE CADASTROS\n";
+        cout<<"*********************************\n";
+        cout<<"O que deseja fazer?\n";
+        cout<<"1-Desabilitar imoveis\n";
+        cout<<"2-Habilitar imoveis\n";
+        cout<<"3-Voltar ao menu\n";
+        cout<<"*********************************\n";
+        cin>>x;
+        switch (x){
+            case 1:
+                desabImovel();
+                break;
+            case 2:
+                HabImovel();
+                break;
+            case 3:
+                break;
+        }
+
+    }else{
+        cout<<"Nao ha imoveis cadastrados!\n";
+
+
+    }
+}
+
+void SistemaImobiliaria::desabImovel(){
+    int x;
+    int op;
+
+    system("cls");
+  do{
+    cout<<"**************************************************\n";
+    cout<<"Imoveis cadastrados\n";
+    cout<<"**************************************************\n";
+    for(int i=0;i<flag;i++){
+            if(fbool[i]==1){
+                cout<<"Numero de Cadastro: 00"<<i<<" - "<<typeImovel(i)<<endl;
+            }
+    }
+    cout<<"Qual imovel voce gostaria de desabilitar da lista?\n";
+            cin>>x;
+            if(x<flag && x>=0){
+                if(fbool[x]==1){
+                    fbool[x]=0;
+                    cout<<"Cadastro desabilitado com sucesso!\n";
+                }else{
+                    cout<<"Erro ao desabilitar cadastro.\n";
+                }
+            }
+     cout<<"Digite 0 para sair ou qualquer numero para realizar a mesma tarefa novamente!\n";
+     cin>>op;
+     system("cls");
+    }while(op!=0);
+}
+void SistemaImobiliaria::HabImovel(){
+
+  int x;
+  int n;
+  int op;
+  int c;
+
+    system("cls");
+  do{
+
+    cout<<"**************************************************\n";
+    cout<<"Imoveis desabilitados\n";
+    cout<<"**************************************************\n";
+    for(int i=0;i<flag;i++){
+            if(fbool[i]==0){
+                cout<<"Numero de Cadastro: 00"<<i<<" - "<<typeImovel(i)<<endl;
+            }
+    }
+
+
+
+      cout<<"Qual imovel voce gostaria habilitar da lista?\n";
+      cin>>x;
+      if(x<flag && x>=0){
+                if(fbool[x]==0){
+                    fbool[x]=1;
+
+                    cout<<"Cadastro reabilitado com sucesso!\n";
+                    cout<<"Gostaria de sobrescrever o imovel selecionado?(1-SIM 0-NAO)\n";
+                    cin>>c;
+                    if(c==1){
+
+                        cout<<"Qual tipo de imovel deseja sobreescrever?(1-CASA 2-APARTAMENTO 3-TERRENO 4-STUDIO 5-FLAT)\n";
+                        cin>>n;
+                        system("cls");
+                        if(n==1){
+                            imoveis[x]=new Casa();
+                            cadastraImovel(imoveis[x],x);
+                            flag--;
+
+                        }else if(n==2){
+                            imoveis[x]=new Apartamento();
+                            cadastraImovel(imoveis[x],x);
+                            flag--;
+                        }else if(n==3){
+                            imoveis[x]=new Terreno();
+                            cadastraImovel(imoveis[x],x);
+                            flag--;
+                        }else if(n==4){
+                            imoveis[x]=new Studio();
+                            cadastraImovel(imoveis[x],x);
+                            flag--;
+                        }else if(n==5){
+                            imoveis[x]=new Flat();
+                            cadastraImovel(imoveis[x],x);
+                            flag--;
+                        }
+                    }
+                }else{
+                    cout<<"Erro ao desabilitar cadastro.\n";
+                }
+            }
+     cout<<"Digite 0 para sair ou qualquer numero para realizar a mesma tarefa novamente!\n";
+     cin>>op;
+     system("cls");
+    }while(op!=0);
+}
+
 
 
 void SistemaImobiliaria::strupr(string &str){
 
-
-
     int x = str.size();
-    for(int i=0; i<x; i++)
-    {
-     str[i] = toupper (str[i]);
+
+    for(int i=0; i<x; i++){
+        str[i] = toupper (str[i]);
     }
 
 
 }
 
-
+string SistemaImobiliaria::typeImovel(int i){
+    if(imoveis[i]->getTipoImovel()==1){
+        return "CASA";}
+    else if(imoveis[i]->getTipoImovel()==2){
+        return "APARTAMENTO";}
+    else if(imoveis[i]->getTipoImovel()==3){
+        return "TERRENO";}
+    else if(imoveis[i]->getTipoImovel()==4){
+        return "STUDIO";}
+    else if(imoveis[i]->getTipoImovel()==5){
+        return "FLAT";}
+    else{
+        return "NULL";
+    }
+}
 
 
 

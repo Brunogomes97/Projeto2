@@ -24,6 +24,7 @@ class Apartamento : public Imovel
         int numQuartos;
         int vagasGaragem;
         double areaAP;
+        int andar;
 };
 
 #endif // APARTAMENTO_H

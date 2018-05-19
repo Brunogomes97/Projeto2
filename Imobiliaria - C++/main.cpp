@@ -47,7 +47,7 @@ int main()
 
         case 1:
 
-         if(i>100){
+         if(i>99){
             cout<<"Limite de Imoveis cadastrados!\n";
             break;
 
@@ -143,8 +143,9 @@ int main()
             break;
         case 9:
             system("cls");
-          //
-
+            sys.deleteImovel();
+            system("pause");
+            system("cls");
             break;
 
         case 10:

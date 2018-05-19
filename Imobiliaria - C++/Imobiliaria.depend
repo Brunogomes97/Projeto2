@@ -161,3 +161,78 @@
 1526739455 source:c:\users\cliente\desktop\backup\programação em c++\imobiliaria - c++\src\studio.cpp
 	"Studio.h"
 
+1526755248 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\main.cpp
+	<iostream>
+	"Endereco.h"
+	<string>
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"SistemaImobiliaria.h"
+	<sstream>
+	<ctype.h>
+	"Studio.h"
+	"Flat.h"
+	<stdio.h>
+
+1526137106 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\endereco.h
+	<string>
+
+1526757224 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\imovel.h
+	"Endereco.h"
+	<sstream>
+	<string>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1526661688 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\casa.h
+	"Imovel.h"
+
+1526753216 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\apartamento.h
+	"Imovel.h"
+
+1526593878 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\terreno.h
+	"Imovel.h"
+
+1526764991 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\sistemaimobiliaria.h
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"Studio.h"
+	"Flat.h"
+	<iostream>
+
+1526739279 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\studio.h
+	"Imovel.h"
+
+1526737304 c:\users\cliente\documents\github\projeto2\imobiliaria - c++\include\flat.h
+	"Imovel.h"
+
+1526683831 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\casa.cpp
+	"Casa.h"
+
+1526137106 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\endereco.cpp
+	"Endereco.h"
+
+1526739740 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\flat.cpp
+	"Flat.h"
+
+1526757204 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\imovel.cpp
+	"Imovel.h"
+
+1526766258 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\sistemaimobiliaria.cpp
+	"SistemaImobiliaria.h"
+	<string.h>
+
+1526740376 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\studio.cpp
+	"Studio.h"
+
+1526666706 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\terreno.cpp
+	"Terreno.h"
+
+1526753308 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\apartamento.cpp
+	"Apartamento.h"
+

@@ -21,6 +21,7 @@ class Imovel
         virtual int  getOferta();
         virtual void cadOferta();
         void resetTipoImovel();
+
         Endereco d;
     protected:
         int tipoImovel; // casa-1,ap-2,terreno-3,studio-4,flat-5;
