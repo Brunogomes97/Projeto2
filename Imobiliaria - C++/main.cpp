@@ -22,8 +22,8 @@ int main()
    Casa *cas;
    Apartamento *ap;
    Terreno *t;
-   //Studio *st;
-   //Flat *fl;
+   Studio *st;
+   Flat *fl;
    SistemaImobiliaria sys;
 
     do{
@@ -53,9 +53,9 @@ int main()
 
          }else{
             system("cls");
-            cout<<"*************************************************\n";
-            cout<<"O que deseja cadastrar?(CASA,APARTAMENTO,TERRENO)\n";
-            cout<<"*************************************************\n";
+            cout<<"***************************************************************\n";
+            cout<<"O que deseja cadastrar?(CASA,APARTAMENTO,TERRENO,STUDIO e FLAT)\n";
+            cout<<"***************************************************************\n";
             setbuf(stdin,NULL);
             getline(cin,imov);
             sys.strupr(imov);
@@ -82,16 +82,16 @@ int main()
 
             }
               else if(imov =="STUDIO"){
-              //  st = new Studio();
+                st = new Studio();
                 system("cls");
-               // sys.cadastraImovel(st,i);
+                sys.cadastraImovel(st,i);
                 i++;
 
             }
               else if(imov =="FLAT"){
-               // fl = new Flat();
+                fl = new Flat();
                 system("cls");
-               // sys.cadastraImovel(fl,i);
+                sys.cadastraImovel(fl,i);
                 i++;
 
             }

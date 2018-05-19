@@ -11,6 +11,7 @@ class Flat : public Imovel
         int getTipoImovel();
         std::string getdescricao();
         void cadEspecifico();
+        void boolFL();
 
     private:
 
@@ -18,7 +19,6 @@ class Flat : public Imovel
         int quartosFL;
         int vagasFl;
         std::string posicaoFL;
-
         bool arFL;
         bool internet_tvFL;
         bool lavanderiaFL;

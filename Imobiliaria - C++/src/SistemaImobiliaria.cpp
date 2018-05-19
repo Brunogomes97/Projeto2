@@ -71,7 +71,8 @@ void SistemaImobiliaria::getImoveis(){
    int casa=0;
    int ap=0;
    int ter=0;
-
+   int fl=0;
+   int st=0;
 
    for(int i=0;i<flag;i++){
         if(fbool[i]==1){
@@ -81,11 +82,17 @@ void SistemaImobiliaria::getImoveis(){
                 ap++;
             if(imoveis[i]->getTipoImovel()==3)
                 ter++;
+            if(imoveis[i]->getTipoImovel()==4)
+                st++;
+            if(imoveis[i]->getTipoImovel()==5)
+                fl++;
         }
     }
     cout<<"Numero de Casas: "<<casa<<endl;
     cout<<"Numero de APs: "<<ap<<endl;
     cout<<"Numero de Terrenos: "<<ter<<endl;
+    cout<<"Numero de Studios: "<<st<<endl;
+    cout<<"Numero de Flats: "<<fl<<endl;
 }
 void SistemaImobiliaria::getDescricaoImoveis(){
 

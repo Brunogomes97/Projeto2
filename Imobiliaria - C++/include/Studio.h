@@ -12,7 +12,7 @@ class Studio: public Imovel
         int getTipoImovel();
         std::string getdescricao();
         void cadEspecifico();
-        //void cadbool();
+        void boolST();
 
     private:
         float areaST;
