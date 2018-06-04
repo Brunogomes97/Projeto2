@@ -7,6 +7,7 @@
 #include "Studio.h"
 #include "Flat.h"
 #include <iostream>
+#include <fstream>
 #define MAX 100
 class SistemaImobiliaria
 {
@@ -23,11 +24,16 @@ class SistemaImobiliaria
         void getImoveisParaVenderPorBairro();
         void getImoveisPorCidade();
         void strupr(std::string &str);  //colocar strings em caixa maiuscula(utilitario)
+        bool getfbool(int);
+
 
         void deleteImovel();
         void desabImovel();
         void HabImovel();
         std::string typeImovel(int);
+        void salvarArquivos(int y);
+        void salvarAlteracoes();
+        int recuperarArquivos(Casa *c,Apartamento *a,Terreno *t,Studio *st,Flat *fl);
     private:
         Imovel *imoveis[MAX];
         int flag=0;//contador de imoveis cadastrados

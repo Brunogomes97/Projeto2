@@ -65,7 +65,7 @@ int Casa::getQuartos(){
     return numQuartos;
 
 }
-double Casa::getAreaT(){
+double Casa::getArea(){
     return areaTerreno;
 
 }
@@ -98,6 +98,21 @@ int Casa::getTipoImovel(){
     return tipoImovel;
 
 }
+void Casa::setTipoImovel(int t){
+
+    tipoImovel=t;
+}
+
+void Casa::savarExpecifico(){
+    fstream casas;
+    casas.open("casa.txt",ios::out|ios::app);
+    casas << numPavimentos << "\n";
+    casas << numQuartos << "\n";
+    casas << areaTerreno << "\n";
+    casas << areaConstruida << "\n";
+    casas.close();
+}
+
 Casa::~Casa()
 {
     //dtor

@@ -1,6 +1,7 @@
 #ifndef CASA_H
 #define CASA_H
 #include "Imovel.h"
+#include <fstream>
 
 class Casa : public Imovel
 {
@@ -9,6 +10,7 @@ class Casa : public Imovel
         Casa();
         virtual ~Casa();
         int getTipoImovel();
+        void setTipoImovel(int);
         std::string getdescricao();
         void cadEspecifico();
         void setPav(int);
@@ -17,8 +19,9 @@ class Casa : public Imovel
         void setAreaC(double);
         int getPav();
         int getQuartos();
-        double getAreaT();
+        double getArea();
         double getAreaC();
+        void savarExpecifico();
 
     private:
         int numPavimentos;

@@ -6,6 +6,20 @@ Flat::Flat()
 
     tipoImovel=5;
 }
+Flat::Flat(float areaFL,int quartosFL,std::string posicaoFL,int vagasFl,
+bool arFL,bool internet_tvFL,bool lavanderiaFL,bool limpezaFL,bool recepcaoFL)
+{
+    this->areaFL=areaFL;
+    this->quartosFL=quartosFL;
+    this->posicaoFL=posicaoFL;
+    this->vagasFl=vagasFl;
+    this->arFL=arFL;
+    this->internet_tvFL=internet_tvFL;
+    this->lavanderiaFL=lavanderiaFL;
+    this->limpezaFL=limpezaFL;
+    this->recepcaoFL=recepcaoFL;
+    tipoImovel=5;
+}
 string Flat::getdescricao(){
 
     stringstream ss;
@@ -76,7 +90,61 @@ int Flat::getTipoImovel(){
     return tipoImovel;
 
 }
+void Flat::setTipoImovel(int t){
 
+    tipoImovel=t;
+}
+
+float Flat::getAreaF(){
+    return areaFL;
+}
+
+int Flat::getQuartos(){
+    return quartosFL;
+}
+
+int Flat::getVagas(){
+    return vagasFl;
+}
+
+std::string Flat::getPosicao(){
+    return posicaoFL;
+}
+
+bool Flat::getAr(){
+    return arFL;
+}
+
+bool Flat::getInternet_tv(){
+    return internet_tvFL;
+}
+
+bool Flat::getLavanderia(){
+    return lavanderiaFL;
+}
+
+bool Flat::getLimpeza(){
+    return limpezaFL;
+}
+
+bool Flat::getRecepcao(){
+    return recepcaoFL;
+}
+
+void Flat::savarExpecifico(){
+    fstream flats;
+    flats.open("flat.txt",ios::out|ios::app);
+    flats << posicaoFL << "\n";
+    flats << areaFL << "\n";
+    flats << quartosFL << "\n";
+    flats << vagasFl << "\n";
+    flats << arFL << "\n";
+    flats << internet_tvFL << "\n";
+    flats << lavanderiaFL << "\n";
+    flats << limpezaFL << "\n";
+    flats << recepcaoFL << "\n";
+    flats.close();
+}
 
 Flat::~Flat()
 {

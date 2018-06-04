@@ -1,6 +1,7 @@
 #ifndef TERRENO_H
 #define TERRENO_H
 #include "Imovel.h"
+#include <fstream>
 class Terreno: public Imovel
 {
     public:
@@ -8,10 +9,13 @@ class Terreno: public Imovel
         Terreno();
         virtual ~Terreno();
         void setAreaT(double);
-        double getAreaT();
+        double getArea();
         std::string getdescricao();
         void cadEspecifico();
         int getTipoImovel();
+        void setTipoImovel(int);
+        void savarExpecifico();
+
     private:
         double areaT;
 };

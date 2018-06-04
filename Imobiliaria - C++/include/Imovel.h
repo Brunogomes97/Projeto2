@@ -12,10 +12,12 @@ class Imovel
         Imovel();
         virtual double getValor();
         virtual int getTipoImovel()=0;
+        virtual void setTipoImovel(int)=0;
         virtual Endereco getEndereco(Endereco d);
         virtual ~Imovel();
         virtual void cadEspecifico()=0;
         virtual std::string getdescricao()=0;
+        virtual void savarExpecifico()=0;
         virtual void setValor(double);
         virtual void setOferta(int);
         virtual int  getOferta();

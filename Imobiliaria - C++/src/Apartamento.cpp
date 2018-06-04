@@ -2,9 +2,10 @@
 
 using namespace std;
 
-Apartamento::Apartamento(string posicao,int numQuartos,int vagasGaragem,double areaAP){
+Apartamento::Apartamento(string posicao,int numQuartos,int andar,int vagasGaragem,double areaAP){
     this->posicao=posicao;
     this->numQuartos=numQuartos;
+    this->andar=andar;
     this->vagasGaragem=vagasGaragem;
     this->areaAP=areaAP;
     tipoImovel=2;
@@ -18,6 +19,10 @@ int Apartamento::getTipoImovel(){
 
     return tipoImovel;
 
+}
+void Apartamento::setTipoImovel(int t){
+
+    tipoImovel=t;
 }
  void Apartamento::setPosicao(std::string posicao){
      this->posicao=posicao;
@@ -44,7 +49,7 @@ int Apartamento::getGaragem(){
     return vagasGaragem;
 }
 
-double Apartamento::getAreaAP(){
+double Apartamento::getArea(){
     return areaAP;
 
 }
@@ -85,6 +90,17 @@ void Apartamento::cadEspecifico(){
     }while(x!=1);
 
     }
+
+void Apartamento::savarExpecifico(){
+    fstream apartamentos;
+    apartamentos.open("apartamento.txt",ios::out|ios::app);
+    apartamentos << posicao << "\n";
+    apartamentos << numQuartos << "\n";
+    apartamentos << andar << "\n";
+    apartamentos << vagasGaragem << "\n";
+    apartamentos << areaAP << "\n";
+    apartamentos.close();
+}
 
 Apartamento::~Apartamento()
 {

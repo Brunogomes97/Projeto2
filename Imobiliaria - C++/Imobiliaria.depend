@@ -236,3 +236,241 @@
 1526753308 source:c:\users\cliente\documents\github\projeto2\imobiliaria - c++\src\apartamento.cpp
 	"Apartamento.h"
 
+1526880348 source:d:\user\documents\github\projeto2\imobiliaria - c++\main.cpp
+	<iostream>
+	"Endereco.h"
+	<string>
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"SistemaImobiliaria.h"
+	<sstream>
+	<ctype.h>
+	"Studio.h"
+	"Flat.h"
+	<stdio.h>
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\endereco.h
+	<string>
+
+1526877815 d:\user\documents\github\projeto2\imobiliaria - c++\include\imovel.h
+	"Endereco.h"
+	<sstream>
+	<string>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\casa.h
+	"Imovel.h"
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\apartamento.h
+	"Imovel.h"
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\terreno.h
+	"Imovel.h"
+
+1526876556 d:\user\documents\github\projeto2\imobiliaria - c++\include\sistemaimobiliaria.h
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"Studio.h"
+	"Flat.h"
+	<iostream>
+	<fstream>
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\studio.h
+	"Imovel.h"
+
+1526864461 d:\user\documents\github\projeto2\imobiliaria - c++\include\flat.h
+	"Imovel.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\apartamento.cpp
+	"Apartamento.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\casa.cpp
+	"Casa.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\endereco.cpp
+	"Endereco.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\flat.cpp
+	"Flat.h"
+
+1526877815 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\imovel.cpp
+	"Imovel.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\studio.cpp
+	"Studio.h"
+
+1526864461 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\terreno.cpp
+	"Terreno.h"
+
+1526880256 source:d:\user\documents\github\projeto2\imobiliaria - c++\src\sistemaimobiliaria.cpp
+	"SistemaImobiliaria.h"
+	<string.h>
+
+1527092279 source:d:\user\documents\nova pasta (2)\main.cpp
+	<iostream>
+	"Endereco.h"
+	<string>
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"SistemaImobiliaria.h"
+	<sstream>
+	<ctype.h>
+	"Studio.h"
+	"Flat.h"
+	<stdio.h>
+
+1526864461 d:\user\documents\nova pasta (2)\include\endereco.h
+	<string>
+
+1527081970 d:\user\documents\nova pasta (2)\include\imovel.h
+	"Endereco.h"
+	<sstream>
+	<string>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1527085901 d:\user\documents\nova pasta (2)\include\casa.h
+	"Imovel.h"
+	<fstream>
+
+1527086570 d:\user\documents\nova pasta (2)\include\apartamento.h
+	"Imovel.h"
+	<fstream>
+
+1527082815 d:\user\documents\nova pasta (2)\include\terreno.h
+	"Imovel.h"
+	<fstream>
+
+1527091576 d:\user\documents\nova pasta (2)\include\sistemaimobiliaria.h
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"Studio.h"
+	"Flat.h"
+	<iostream>
+	<fstream>
+
+1527085902 d:\user\documents\nova pasta (2)\include\studio.h
+	"Imovel.h"
+	<fstream>
+
+1527085901 d:\user\documents\nova pasta (2)\include\flat.h
+	"Imovel.h"
+	<fstream>
+
+1527086570 source:d:\user\documents\nova pasta (2)\src\apartamento.cpp
+	"Apartamento.h"
+
+1527085766 source:d:\user\documents\nova pasta (2)\src\casa.cpp
+	"Casa.h"
+
+1526864461 source:d:\user\documents\nova pasta (2)\src\endereco.cpp
+	"Endereco.h"
+
+1527087100 source:d:\user\documents\nova pasta (2)\src\flat.cpp
+	"Flat.h"
+
+1526877815 source:d:\user\documents\nova pasta (2)\src\imovel.cpp
+	"Imovel.h"
+
+1528129070 source:d:\user\documents\nova pasta (2)\src\sistemaimobiliaria.cpp
+	"SistemaImobiliaria.h"
+	<string.h>
+
+1528129070 source:d:\user\documents\nova pasta (2)\src\studio.cpp
+	"Studio.h"
+
+1527085562 source:d:\user\documents\nova pasta (2)\src\terreno.cpp
+	"Terreno.h"
+
+1527092280 source:f:\imob\main.cpp
+	<iostream>
+	"Endereco.h"
+	<string>
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"SistemaImobiliaria.h"
+	<sstream>
+	<ctype.h>
+	"Studio.h"
+	"Flat.h"
+	<stdio.h>
+
+1526864462 f:\imob\include\endereco.h
+	<string>
+
+1527081972 f:\imob\include\imovel.h
+	"Endereco.h"
+	<sstream>
+	<string>
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1527085902 f:\imob\include\casa.h
+	"Imovel.h"
+	<fstream>
+
+1527086572 f:\imob\include\apartamento.h
+	"Imovel.h"
+	<fstream>
+
+1527082816 f:\imob\include\terreno.h
+	"Imovel.h"
+	<fstream>
+
+1527091578 f:\imob\include\sistemaimobiliaria.h
+	"Imovel.h"
+	"Casa.h"
+	"Apartamento.h"
+	"Terreno.h"
+	"Studio.h"
+	"Flat.h"
+	<iostream>
+	<fstream>
+
+1527085904 f:\imob\include\studio.h
+	"Imovel.h"
+	<fstream>
+
+1527085902 f:\imob\include\flat.h
+	"Imovel.h"
+	<fstream>
+
+1527086572 source:f:\imob\src\apartamento.cpp
+	"Apartamento.h"
+
+1527085768 source:f:\imob\src\casa.cpp
+	"Casa.h"
+
+1526864462 source:f:\imob\src\endereco.cpp
+	"Endereco.h"
+
+1528129304 source:f:\imob\src\flat.cpp
+	"Flat.h"
+
+1526877816 source:f:\imob\src\imovel.cpp
+	"Imovel.h"
+
+1528129072 source:f:\imob\src\studio.cpp
+	"Studio.h"
+
+1527085564 source:f:\imob\src\terreno.cpp
+	"Terreno.h"
+
+1528133100 source:f:\imob\src\sistemaimobiliaria.cpp
+	"SistemaImobiliaria.h"
+	<string.h>
+

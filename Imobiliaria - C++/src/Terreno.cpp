@@ -1,5 +1,6 @@
 #include "Terreno.h"
 using namespace std;
+
 Terreno::Terreno(double areaT)
 {
      this->areaT=areaT;
@@ -15,6 +16,10 @@ int Terreno::getTipoImovel(){
     return tipoImovel;
 
 
+}
+void Terreno::setTipoImovel(int t){
+
+    tipoImovel=t;
 }
 string Terreno::getdescricao(){
       stringstream ss;
@@ -45,9 +50,16 @@ void Terreno::setAreaT(double areaT){
     this->areaT=areaT;
 
 }
-double Terreno::getAreaT(){
+double Terreno::getArea(){
     return areaT;
 
+}
+
+void Terreno::savarExpecifico(){
+    fstream terrenos;
+    terrenos.open("terreno.txt",ios::out|ios::app);
+    terrenos << areaT << "\n";
+    terrenos.close();
 }
 
 Terreno::~Terreno()

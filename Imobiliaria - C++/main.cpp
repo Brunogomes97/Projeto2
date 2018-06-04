@@ -16,7 +16,7 @@ using namespace std;
 int main()
 {
    int caso;
-   int i=0;
+   int i=0,y=0;
    string imov;
 
    Casa *cas;
@@ -25,7 +25,8 @@ int main()
    Studio *st;
    Flat *fl;
    SistemaImobiliaria sys;
-
+   i=sys.recuperarArquivos(cas,ap,t,st,fl);
+   y=i;
     do{
         cout<<"*************************************************\n";
         cout<<"*******************BEM VINDO!********************\n";
@@ -39,7 +40,8 @@ int main()
         cout<<"7-Verificar os imoveis para vender por bairro\n\n";
         cout<<"8-Verificar os imoveis disponiveis por cidade\n\n";
         cout<<"9-Deletar imovel da lista\n\n";
-        cout<<"10-Sair do Programa\n\n";
+        cout<<"10-Salvar arquivos\n\n";
+        cout<<"11-Sair do Programa\n\n";
         cout<<"*************************************************\n";
         cout<<"Insira a opcao desejada:\n";
         cin>>caso;
@@ -99,8 +101,6 @@ int main()
             break;
             system("cls");
 
-
-
         case 2:
             system("cls");
             sys.getImoveis();
@@ -127,20 +127,22 @@ int main()
             system("pause");
             system("cls");
             break;
+
         case 6:
             system("cls");
             sys.getImoveisParaAlugarPorBairro();
-
             break;
+
         case 7:
             system("cls");
             sys.getImoveisParaVenderPorBairro();
-
             break;
+
         case 8:
             system("cls");
             sys.getImoveisPorCidade();
             break;
+
         case 9:
             system("cls");
             sys.deleteImovel();
@@ -149,18 +151,28 @@ int main()
             break;
 
         case 10:
-
+            sys.salvarAlteracoes();
+            system("cls");
             break;
+
+        case 11:
+            system("cls");
+            cout << "Deseja salvar alteracoes(1-SIM ou Qualquer numero para Sair)\n";
+            cin >> y;
+            if(y==1){
+                sys.salvarAlteracoes();
+            }
+            break;
+
         default:
             cout<<"Insira uma entrada valida!\n";
             system("pause");
             system("cls");
             break;
+
         }
 
-
-
-    }while(caso!=10);
+    }while(caso!=11);
 
     return 0;
 }

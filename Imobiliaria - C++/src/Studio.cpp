@@ -1,8 +1,27 @@
 #include "Studio.h"
 using namespace std;
 
-Studio::Studio()
+Studio::Studio(float areaST,int quartosST,std::string posicaoST,
+int vagasST,bool arST,bool internet_tvST,bool lavanderiaST,bool limpezaST,
+bool recepcaoST,bool piscinaST,bool saunaST,bool ginasticaST)
 {
+    this->areaST=areaST;
+    this->quartosST=quartosST;
+    this->posicaoST=posicaoST;
+    this->vagasST=vagasST;
+    this->arST=arST;
+    this->internet_tvST=internet_tvST;
+    this->lavanderiaST=lavanderiaST;
+    this->limpezaST=limpezaST;
+    this->recepcaoST=recepcaoST;
+    this->piscinaST=piscinaST;
+    this->saunaST=saunaST;
+    this->ginasticaST=ginasticaST;
+    tipoImovel=4;
+}
+
+
+Studio::Studio(){
     arST=0;
     internet_tvST=0;
     lavanderiaST=0;
@@ -13,6 +32,8 @@ Studio::Studio()
     ginasticaST=0;
     tipoImovel=4;
 }
+
+
 string Studio::getdescricao(){
 
     stringstream ss;
@@ -27,6 +48,7 @@ string Studio::getdescricao(){
     return ss.str();
 
 }
+
 
 void Studio::boolST(){
     cout<<"********************************************\n";
@@ -50,14 +72,6 @@ void Studio::boolST(){
     if(ginasticaST == 1)
         cout<<("Sala de Ginast.   \n");
     cout<<"********************************************\n";
-
-
-
-
-
-
-
-
 
 }
 
@@ -108,6 +122,76 @@ int Studio::getTipoImovel(){
 
 }
 
+void Studio::setTipoImovel(int t){
+
+    tipoImovel=t;
+}
+
+float Studio::getAreaF(){
+    return areaST;
+}
+
+int Studio::getQuartos(){
+    return quartosST;
+}
+
+int Studio::getVagas(){
+    return vagasST;
+}
+
+std::string Studio::getPosicao(){
+    return posicaoST;
+}
+
+bool Studio::getAr(){
+    return arST;
+}
+
+bool Studio::getInternet_tv(){
+    return internet_tvST;
+}
+
+bool Studio::getLavanderia(){
+    return lavanderiaST;
+}
+
+bool Studio::getLimpeza(){
+    return limpezaST;
+}
+
+bool Studio::getRecepcao(){
+    return recepcaoST;
+}
+
+bool Studio::getPiscina(){
+    return piscinaST;
+}
+
+bool Studio::getSauna(){
+    return saunaST;
+}
+
+bool Studio::getGinastica(){
+    return ginasticaST;
+}
+
+void Studio::savarExpecifico(){
+    fstream studios;
+    studios.open("studio.txt",ios::out|ios::app);
+    studios << posicaoST <<"\n";
+    studios << areaST <<"\n";
+    studios << quartosST <<"\n";
+    studios << vagasST <<"\n";
+    studios << arST <<"\n";
+    studios << internet_tvST <<"\n";
+    studios << lavanderiaST <<"\n";
+    studios << limpezaST <<"\n";
+    studios << recepcaoST <<"\n";
+    studios << piscinaST <<"\n";
+    studios << saunaST <<"\n";
+    studios << ginasticaST <<"\n";
+    studios.close();
+}
 
 Studio::~Studio()
 {
